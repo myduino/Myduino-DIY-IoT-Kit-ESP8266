@@ -3,13 +3,14 @@
 The kit is a comprehensive kit aimed at helping learners grasp the fundamentals of electronics, programming, and Internet of Things (IoT) through practical, hands-on projects using ESP8266. This kit is ideal for students, beginners, and intermediate users who want to deepen their understanding of how electronics and software intertwine, and how they can be leveraged to solve real-world problems.
 
 ## Prerequisites
-An Arduino IDE installed on your computer.
-Basic knowledge of electronics and programming.
+- An [Arduino IDE](https://www.arduino.cc/en/software/) installed on your computer including [Arduino ESP8266 core](https://github.com/esp8266/Arduino).
+- [NodeJS](https://nodejs.org/en) and [Node-RED](https://nodered.org/).
 
-## Installation
-Download the latest release of the code repository.
-Unzip the folder and open it in your Arduino IDE.
-Follow the instructions provided in each lab exercise to set up your hardware and software.
+## Installation and Usage
+1. Download the code repository into your PC folder Documents/Arduino.
+2. Unzip the folder.
+3. Open the Arduino IDE.
+4. Go to menu Files > Sketchbook > Myduino-DIY-IoT-Kiy-ESP8266
 
 ## Arduino Example Sketch
 The example sketch are structured to progressively build your understanding from basic electronic principles to advanced IoT concepts:
