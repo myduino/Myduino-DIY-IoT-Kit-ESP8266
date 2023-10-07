@@ -27,6 +27,5 @@ The example sketch are structured to progressively build your understanding from
 - Lab_10_Control_LED_from_Blynk
 - Lab_11_Update_Sensor_Data_to_Blynk
 - Lab_12_Update_Sensor_Data_to_Node-RED
-- Lab_13_Control_Motor_Speed_from_Node-RED
 
 Each sketch examples to help you grasp the concepts and apply them practically.
