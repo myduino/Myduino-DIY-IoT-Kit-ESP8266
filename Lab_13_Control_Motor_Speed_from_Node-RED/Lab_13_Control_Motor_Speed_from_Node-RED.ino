@@ -7,10 +7,10 @@ SimpleDHT11 dht11(pinDHT11);
 
 const char ssid[] = "YOUR_SSID";
 const char password[] = "YOUR_PASSWORD";
-const char mqttPublishTemperature[] = "my-politeknik-YOUR_PHONE_NUMBER/suhu";
-const char mqttPublishHumidity[] = "my-politeknik-YOUR_PHONE_NUMBER/kelembapan";
+const char mqttPublishTemperature[] = "YOUR_PHONE_NUMBER/suhu";
+const char mqttPublishHumidity[] = "YOUR_PHONE_NUMBER/kelembapan";
 
-const char mqttSubscribeTopic[] = "my-politeknik-YOUR_PHONE_NUMBER/control";
+const char mqttSubscribeTopic[] = "YOUR_PHONE_NUMBER/control";
 
 WiFiClient net;
 MQTTClient mqtt;
