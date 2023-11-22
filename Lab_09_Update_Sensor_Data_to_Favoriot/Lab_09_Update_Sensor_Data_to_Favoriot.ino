@@ -13,8 +13,6 @@ const char deviceAccessToken[] = "YOUR_DEVICE_ACCESS_TOKEN";
 
 unsigned long lastMillis = 0;
 
-const uint8_t httpsFingerprint[20] = {0x0A, 0x7C, 0x66, 0xBB, 0x16, 0x4F, 0xC6, 0x3D, 0x14, 0xCF, 0xB0, 0x90, 0x4A, 0xFE, 0x5F, 0x7E, 0x5D, 0x82, 0x8A, 0xE3};
-
 void connectToWiFi() {
   Serial.print("Connecting to Wi-Fi '" + String(ssid) + "' ...");
 
@@ -62,7 +60,7 @@ void loop() {
     // STEP 3 - Favoriot HTTPS API Request - Send data to Favoriot data stream
     std::unique_ptr<BearSSL::WiFiClientSecure>client(new BearSSL::WiFiClientSecure);
     
-    client->setFingerprint(httpsFingerprint);
+    client->setInsecure();
 
     HTTPClient https;
 
