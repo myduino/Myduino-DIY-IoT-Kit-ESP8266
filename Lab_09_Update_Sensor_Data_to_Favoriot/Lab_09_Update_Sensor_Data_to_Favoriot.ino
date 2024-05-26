@@ -1,4 +1,5 @@
 #include <ESP8266WiFi.h>
+#include <coap-simple.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecureBearSSL.h>
 #include <SimpleDHT.h>
@@ -10,8 +11,19 @@ const char ssid[] = "YOUR_SSID";
 const char password[] = "YOUR_PASSWORD";
 const char deviceDeveloperId[] = "YOUR_DEVICE_DEVELOPER_ID";
 const char deviceAccessToken[] = "YOUR_DEVICE_ACCESS_TOKEN";
+const char favoriotCoapUrl[] = "coap.favoriot.com";
+
+IPAddress host(159, 65, 134, 213); //DNS lookup coap.favoriot.com
+String method = "POST";
+int port = 5683;
+
+WiFiUDP udp;
+Coap coap(udp, 1024);
 
 unsigned long lastMillis = 0;
+
+// CoAP client response callback
+void callback_response(CoapPacket &packet, IPAddress ip, int port);
 
 void connectToWiFi() {
   Serial.print("Connecting to Wi-Fi '" + String(ssid) + "' ...");
