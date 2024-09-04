@@ -23,9 +23,9 @@ The example sketch are structured to progressively build your understanding from
 - Lab_06_Analog_Input_Potentiometer
 - Lab_07_Analog_Input_LDR
 - Lab_08_Web_Server_Control_LED
-- Lab_09_Update_Sensor_Data_to_Favoriot
-- Lab_10_Control_LED_from_Blynk
-- Lab_11_Update_Sensor_Data_to_Blynk
+- Lab_09_Control_LED_from_Blynk
+- Lab_10_Update_Sensor_Data_to_Blynk
+- Lab_11_Update_Sensor_Data_to_Favoriot
 - Lab_12_Update_Sensor_Data_to_Node-RED
 
 Each sketch examples to help you grasp the concepts and apply them practically.
